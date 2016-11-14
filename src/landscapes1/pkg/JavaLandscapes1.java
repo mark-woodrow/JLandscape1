@@ -79,6 +79,15 @@ public class JavaLandscapes1 {
 
         }
 
+        // chop the sea away!
+            for (int i = 0; i < size; i++) {
+                for (int j = 0; j < size; j++) {
+                    if (landscape[i][j] < 0)
+                        landscape[i][j] = 0;
+                }
+            }
+        
+        
         // print the landscape array
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
